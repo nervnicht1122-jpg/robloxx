@@ -1,26 +1,3 @@
---[[
-    ╔════════════════════════════════════════════════════════════════════════╗
-    ║                                                                        ║
-    ║               🎮 WORKIK ROBLOX EXPLOIT SCRIPT v1.0 🎮                ║
-    ║                                                                        ║
-    ║              A Professional All-in-One Roblox Exploit Tool            ║
-    ║                     with Beautiful UI & Modern Features               ║
-    ║                                                                        ║
-    ╚════════════════════════════════════════════════════════════════════════╝
-    
-    Features:
-    • Fly | Noclip | Walkspeed Control
-    • Emotes (All Roblox Emotes)
-    • Teleportation
-    • Advanced Troll Menu
-    • Smooth Animations & Modern GUI
-    • Loadstring Compatible
-]]
-
--- ═══════════════════════════════════════════════════════════════════════════
--- CONFIGURATION & SETUP
--- ═══════════════════════════════════════════════════════════════════════════
-
 local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
@@ -31,10 +8,6 @@ local player = Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
 local humanoid = character:WaitForChild("Humanoid")
 local rootPart = character:WaitForChild("HumanoidRootPart")
-
--- ═══════════════════════════════════════════════════════════════════════════
--- STATE MANAGEMENT
--- ═══════════════════════════════════════════════════════════════════════════
 
 local State = {
     Flying = false,
@@ -49,9 +22,6 @@ local State = {
     FlingPower = 50,
 }
 
--- ═══════════════════════════════════════════════════════════════════════════
--- ROBLOX EMOTES DATABASE
--- ═══════════════════════════════════════════════════════════════════════════
 
 local Emotes = {
     "Cry", "Cheer", "Laugh", "Wave", "Shrug", "Sit", "Bow", 
